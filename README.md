@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Protofile
+
+Programming task Prototyp
+
+## Description
+
+A small file archive
+
+Built with:
+
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/) React framework for full-stack web applications
+- [Tailwind](https://tailwindcss.com/) CSS framework
+- [Formik](https://formik.org/) Form library for React
+- [Yup](https://github.com/jquense/yup) Object schema validation
+- [MongoDB](https://www.mongodb.com/) Document-oriented database
+- [Amazon S3](https://aws.amazon.com/s3/) Cloud object storage
 
 ## Getting Started
 
-First, run the development server:
+Clone project and install dependencies:
+
+```bash
+git clone https://github.com/edvinbaggman/protofile.git
+cd protofile
+npm install
+```
+
+IMPORTANT: create file (.env.local) in root with the following keys:
+
+- MONGODB_URI
+- MONGODB_DB_NAME
+- NEXT_PUBLIC_AWS_BUCKET_NAME
+- NEXT_PUBLIC_AWS_REGION
+- AWS_ACCESS_ID
+- AWS_SECRET_ID
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or, improve local development performance using Turbopack:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run turbo
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Or, build the application and start the Node.js server:
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open [http://localhost:3000](http://localhost:3000)
